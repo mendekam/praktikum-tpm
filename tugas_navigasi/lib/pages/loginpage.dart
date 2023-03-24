@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'homepage.dart';
+
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
   @override
@@ -17,9 +19,12 @@ class LoginPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Container(
-                  padding: const EdgeInsets.fromLTRB(20, 20, 20, 50),
-                  child: Image.asset("assets/images/splashscreen.jpg", width: 200, height: 200,)
-                ),
+                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 50),
+                    child: Image.asset(
+                      "assets/images/splashscreen.jpg",
+                      width: 200,
+                      height: 200,
+                    )),
                 Container(
                   padding: const EdgeInsets.all(10),
                   child: TextField(
@@ -28,7 +33,7 @@ class LoginPage extends StatelessWidget {
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(90.0),
                         ),
-                        labelText: "Email"),
+                        labelText: "Username"),
                   ),
                 ),
                 Container(
@@ -50,18 +55,23 @@ class LoginPage extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                       minimumSize: const Size.fromHeight(50),
                     ),
-                    onPressed: () { 
-                      if (usernameController.text == "admin" && passwordController.text == "admin") {
-                        Navigator.pushNamed(context, '/home'); 
+                    onPressed: () {
+                      if (usernameController.text == "admin" &&
+                          passwordController.text == "admin") {
+                        Navigator.pushReplacement(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomePage(
+                                      username: usernameController.text,
+                                    )));
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
-                            content: Text("Email atau Password Salah"),
+                            content: Text("Username atau Password Salah"),
                           ),
                         );
                       }
-                      
-                     },
+                    },
                     child: Text("Login"),
                   ),
                 ),

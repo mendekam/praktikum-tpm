@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_navigasi/pages/splashscreen.dart';
 
+import 'pages/detailpage.dart';
 import 'pages/homepage.dart';
 import 'pages/loginpage.dart';
 
@@ -21,11 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
-      routes: {
-        '/': (context) => const SplashScreen(),
-        '/home': (context) => const HomePage(),
-        '/login': (context) => const LoginPage(),
-      },
+      home: const SplashScreen(),
     );
   }
 }
