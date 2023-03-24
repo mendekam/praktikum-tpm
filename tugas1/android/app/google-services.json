@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "1064746132018",
+    "project_id": "tpm-tugas",
+    "storage_bucket": "tpm-tugas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064746132018:android:a953777267488ba5eb122b",
+        "android_client_info": {
+          "package_name": "com.example.tugas1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064746132018-dl9027r36e59qgtql7tg9htsl1pnvs3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfIMcp4Vpb-XNIIQudOL81oebg5zi4hF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064746132018-dl9027r36e59qgtql7tg9htsl1pnvs3a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1064746132018-jr7gdfje42cahirg5noko1ea8bgfrdq4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tugastpm1"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064746132018:android:983c192917d58e83eb122b",
+        "android_client_info": {
+          "package_name": "com.example.tugastpm1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064746132018-dl9027r36e59qgtql7tg9htsl1pnvs3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfIMcp4Vpb-XNIIQudOL81oebg5zi4hF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064746132018-dl9027r36e59qgtql7tg9htsl1pnvs3a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1064746132018-jr7gdfje42cahirg5noko1ea8bgfrdq4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tugastpm1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
