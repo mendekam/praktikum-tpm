@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tugas_navigasi/data/data.dart';
 
 import 'detailpage.dart';
+import 'loginpage.dart';
 
 class HomePage extends StatelessWidget {
   var username;
@@ -13,7 +14,20 @@ class HomePage extends StatelessWidget {
     final TourismPlace tourismPlace;
     return Scaffold(
       appBar: AppBar(
-        title: Text("User : $username"),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text("User : $username"),
+            GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return LoginPage();
+                  }));
+                },
+                child: Text("Logout")),
+          ],
+        ),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) {

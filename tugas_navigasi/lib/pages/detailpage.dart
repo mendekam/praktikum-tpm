@@ -16,10 +16,14 @@ class DetailPage extends StatelessWidget {
         body: Center(
           child: Column(
             children: <Widget>[
-              Image.network(tourismPlace.imageUrls.first),
+              Image.network(tourismPlace.imageUrls.first,
+                  width: 200, height: 200),
               Text(tourismPlace.name),
               Text(tourismPlace.location),
-              Text(tourismPlace.description),
+              Container(
+                padding: EdgeInsets.all(10),
+                width: 500,
+                child: Text(tourismPlace.description)),
             ],
           ),
         ));
