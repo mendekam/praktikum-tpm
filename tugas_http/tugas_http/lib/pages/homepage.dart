@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:tugas_http/api/httpservice.dart';
+
+import 'detailpage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -37,6 +37,16 @@ class _HomePageState extends State<HomePage> {
                     title: Text(snapshot.data[index].title),
                     subtitle: Text(snapshot.data[index].description),
                     trailing: Text(snapshot.data[index].price.toString()),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DetailPage(
+                            product: snapshot.data[index],
+                          ),
+                        ),
+                      );
+                    },
                   ),
                 );
               },

@@ -1,5 +1,5 @@
 import 'dart:convert';
-import '../model/Product.dart';
+import '../model/product.dart';
 import 'package:http/http.dart' as http;
 
 class HttpService {

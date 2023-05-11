@@ -1,5 +1,4 @@
-
-import 'Rating.dart';
+import 'package:tugas_http/model/rating.dart';
 
 class Product {
   final int id;
